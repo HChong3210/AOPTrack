@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "HYZViewController1.h"
+#import "HYZTrackManager.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    [HYZTrackManager setup];
+    HYZViewController1 *vc1 = [[HYZViewController1 alloc] init];
+    UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:vc1];
+    self.window.rootViewController = navC;
     return YES;
 }
 

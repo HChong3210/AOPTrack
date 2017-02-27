@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FCAB8ECCCEBFC89ACCF0088 /* libPods-AOPTrack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0CCD1DBCE75B7FBF30CB6F /* libPods-AOPTrack.a */; };
 		47D8C90A1E5FCFD50000E371 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8C9091E5FCFD50000E371 /* main.m */; };
 		47D8C90D1E5FCFD50000E371 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8C90C1E5FCFD50000E371 /* AppDelegate.m */; };
 		47D8C9101E5FCFD50000E371 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8C90F1E5FCFD50000E371 /* ViewController.m */; };
 		47D8C9131E5FCFD50000E371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D8C9111E5FCFD50000E371 /* Main.storyboard */; };
 		47D8C9151E5FCFD50000E371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D8C9141E5FCFD50000E371 /* Assets.xcassets */; };
 		47D8C9181E5FCFD50000E371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D8C9161E5FCFD50000E371 /* LaunchScreen.storyboard */; };
+		47D8C9201E5FD0140000E371 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D8C91F1E5FD0140000E371 /* Launch Screen.storyboard */; };
+		47D8C9231E5FD23E0000E371 /* HYZTrackList.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8C9221E5FD23E0000E371 /* HYZTrackList.m */; };
+		47D8C9261E5FD37C0000E371 /* HYZViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8C9251E5FD37C0000E371 /* HYZViewController1.m */; };
+		47D8C9291E5FD3960000E371 /* HYZViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8C9281E5FD3960000E371 /* HYZViewController2.m */; };
+		47D8C92C1E5FD4490000E371 /* HYZViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8C92B1E5FD4490000E371 /* HYZViewController3.m */; };
+		47D8C92F1E6024B70000E371 /* HYZTrackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8C92E1E6024B70000E371 /* HYZTrackManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E9DA8AE9A76F19AD2E9CB3A /* Pods-AOPTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOPTrack.release.xcconfig"; path = "Pods/Target Support Files/Pods-AOPTrack/Pods-AOPTrack.release.xcconfig"; sourceTree = "<group>"; };
 		47D8C9051E5FCFD50000E371 /* AOPTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOPTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D8C9091E5FCFD50000E371 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47D8C90B1E5FCFD50000E371 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +34,19 @@
 		47D8C9141E5FCFD50000E371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47D8C9171E5FCFD50000E371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47D8C9191E5FCFD50000E371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D8C91F1E5FD0140000E371 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		47D8C9211E5FD23E0000E371 /* HYZTrackList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZTrackList.h; sourceTree = "<group>"; };
+		47D8C9221E5FD23E0000E371 /* HYZTrackList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYZTrackList.m; sourceTree = "<group>"; };
+		47D8C9241E5FD37C0000E371 /* HYZViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZViewController1.h; sourceTree = "<group>"; };
+		47D8C9251E5FD37C0000E371 /* HYZViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYZViewController1.m; sourceTree = "<group>"; };
+		47D8C9271E5FD3960000E371 /* HYZViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZViewController2.h; sourceTree = "<group>"; };
+		47D8C9281E5FD3960000E371 /* HYZViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYZViewController2.m; sourceTree = "<group>"; };
+		47D8C92A1E5FD4490000E371 /* HYZViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZViewController3.h; sourceTree = "<group>"; };
+		47D8C92B1E5FD4490000E371 /* HYZViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYZViewController3.m; sourceTree = "<group>"; };
+		47D8C92D1E6024B70000E371 /* HYZTrackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZTrackManager.h; sourceTree = "<group>"; };
+		47D8C92E1E6024B70000E371 /* HYZTrackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYZTrackManager.m; sourceTree = "<group>"; };
+		4C0CCD1DBCE75B7FBF30CB6F /* libPods-AOPTrack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AOPTrack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9A7864ED345FB41BB36421 /* Pods-AOPTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOPTrack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AOPTrack/Pods-AOPTrack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +54,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FCAB8ECCCEBFC89ACCF0088 /* libPods-AOPTrack.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22DBFFFBF26DC989B1D786D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C0CCD1DBCE75B7FBF30CB6F /* libPods-AOPTrack.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		47D8C8FC1E5FCFD50000E371 = {
 			isa = PBXGroup;
 			children = (
 				47D8C9071E5FCFD50000E371 /* AOPTrack */,
 				47D8C9061E5FCFD50000E371 /* Products */,
+				FED4F736874D74E1D4B8F5E9 /* Pods */,
+				22DBFFFBF26DC989B1D786D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +94,16 @@
 				47D8C90C1E5FCFD50000E371 /* AppDelegate.m */,
 				47D8C90E1E5FCFD50000E371 /* ViewController.h */,
 				47D8C90F1E5FCFD50000E371 /* ViewController.m */,
+				47D8C9211E5FD23E0000E371 /* HYZTrackList.h */,
+				47D8C9221E5FD23E0000E371 /* HYZTrackList.m */,
+				47D8C92D1E6024B70000E371 /* HYZTrackManager.h */,
+				47D8C92E1E6024B70000E371 /* HYZTrackManager.m */,
+				47D8C9241E5FD37C0000E371 /* HYZViewController1.h */,
+				47D8C9251E5FD37C0000E371 /* HYZViewController1.m */,
+				47D8C9271E5FD3960000E371 /* HYZViewController2.h */,
+				47D8C9281E5FD3960000E371 /* HYZViewController2.m */,
+				47D8C92A1E5FD4490000E371 /* HYZViewController3.h */,
+				47D8C92B1E5FD4490000E371 /* HYZViewController3.m */,
 				47D8C9111E5FCFD50000E371 /* Main.storyboard */,
 				47D8C9141E5FCFD50000E371 /* Assets.xcassets */,
 				47D8C9161E5FCFD50000E371 /* LaunchScreen.storyboard */,
@@ -75,8 +117,18 @@
 			isa = PBXGroup;
 			children = (
 				47D8C9091E5FCFD50000E371 /* main.m */,
+				47D8C91F1E5FD0140000E371 /* Launch Screen.storyboard */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FED4F736874D74E1D4B8F5E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D9A7864ED345FB41BB36421 /* Pods-AOPTrack.debug.xcconfig */,
+				3E9DA8AE9A76F19AD2E9CB3A /* Pods-AOPTrack.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47D8C91C1E5FCFD50000E371 /* Build configuration list for PBXNativeTarget "AOPTrack" */;
 			buildPhases = (
+				63E8EA24FE64A7E65BF3088D /* [CP] Check Pods Manifest.lock */,
 				47D8C9011E5FCFD50000E371 /* Sources */,
 				47D8C9021E5FCFD50000E371 /* Frameworks */,
 				47D8C9031E5FCFD50000E371 /* Resources */,
+				F964C059A3C81948D04060E5 /* [CP] Embed Pods Frameworks */,
+				8281925D109ECB89789FAD19 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,20 +195,74 @@
 			files = (
 				47D8C9181E5FCFD50000E371 /* LaunchScreen.storyboard in Resources */,
 				47D8C9151E5FCFD50000E371 /* Assets.xcassets in Resources */,
+				47D8C9201E5FD0140000E371 /* Launch Screen.storyboard in Resources */,
 				47D8C9131E5FCFD50000E371 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		63E8EA24FE64A7E65BF3088D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8281925D109ECB89789FAD19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AOPTrack/Pods-AOPTrack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F964C059A3C81948D04060E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AOPTrack/Pods-AOPTrack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		47D8C9011E5FCFD50000E371 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47D8C92C1E5FD4490000E371 /* HYZViewController3.m in Sources */,
 				47D8C9101E5FCFD50000E371 /* ViewController.m in Sources */,
+				47D8C9291E5FD3960000E371 /* HYZViewController2.m in Sources */,
+				47D8C9231E5FD23E0000E371 /* HYZTrackList.m in Sources */,
 				47D8C90D1E5FCFD50000E371 /* AppDelegate.m in Sources */,
+				47D8C9261E5FD37C0000E371 /* HYZViewController1.m in Sources */,
 				47D8C90A1E5FCFD50000E371 /* main.m in Sources */,
+				47D8C92F1E6024B70000E371 /* HYZTrackManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -261,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -271,6 +380,7 @@
 		};
 		47D8C91D1E5FCFD50000E371 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D9A7864ED345FB41BB36421 /* Pods-AOPTrack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 73TY8N98GF;
@@ -283,6 +393,7 @@
 		};
 		47D8C91E1E5FCFD50000E371 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E9DA8AE9A76F19AD2E9CB3A /* Pods-AOPTrack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 73TY8N98GF;
@@ -312,6 +423,7 @@
 				47D8C91E1E5FCFD50000E371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
