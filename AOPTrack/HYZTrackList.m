@@ -31,8 +31,8 @@
                            
 //=======================================复杂埋点==========================================
                            @{kClassName:@"HYZViewController3",
-                             kHookFunction:@"weixinHomeFunctionWithType:",
-                             kHandlerBlock:@"DFCWeiXinUserHomeFunctionHandler",
+                             kHookFunction:@"trackWithTag:",
+                             kHandlerBlock:@"HYZViewController3TrackHandleBlock",
                              kIsLightEvent:@(NO)}];
     return trackList;
 }

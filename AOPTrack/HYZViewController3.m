@@ -41,23 +41,7 @@
 //根据服务端某个返回值来响应不同的埋点事件
 //埋点事件名称放在服务端返回的字段中
 - (void)trackWithTag:(NSInteger)tag {
-    switch (tag) {
-        case 1:
-            
-            break;
-        case 2:
-            
-            break;
-        case 3:
-            
-            break;
-        case 4:
-            
-            break;
-            
-        default:
-            break;
-    }
+
 }
 
 

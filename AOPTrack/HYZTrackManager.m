@@ -13,6 +13,10 @@
 @implementation HYZTrackManager
 
 + (void)setup {
+    //实现和替换hook的block方法
+    NSMutableDictionary *blockDict = [[NSMutableDictionary alloc] init];
+    [HYZTrackManager weightEventEntry:blockDict];
+    
     [[HYZTrackList trackList] enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         BOOL isLightEvent = [obj[kIsLightEvent] boolValue];
         NSString *className = obj[kClassName];
@@ -21,10 +25,17 @@
         Class class = NSClassFromString(className);
         SEL selector = NSSelectorFromString(functionName);
         if (isLightEvent == YES) {
+            if (!functionName) {
+                return;
+            }
             [HYZTrackManager lightTrackTarget:class selector:selector functionName:functionName trackId:eventName];
         } else {
-            
-            [HYZTrackManager complexTrack];
+            NSString *blockName = obj[kHandlerBlock];
+            id handleBlock = [blockDict objectForKey:blockName];
+            if (!handleBlock) {
+                return;
+            }
+            [HYZTrackManager complexTrackTarget:class selector:selector usingBlock:handleBlock];
         }
     }];
 }
@@ -69,8 +80,42 @@
     }
 }
 
-+ (void)complexTrack {
-    
+//复杂的埋点,
++ (void)complexTrackTarget:(Class)target selector:(SEL)selector usingBlock:(id)block {
+    NSError *error;
+    [target aspect_hookSelector:selector withOptions:AspectPositionAfter usingBlock:block error:&error];
+}
+
+//hook的block在这里定义和实现
++ (void)weightEventEntry:(NSMutableDictionary*)blockDict{
+    [HYZTrackManager trackButtonAction:blockDict];
+}
+
+//block的内部实现
++ (void)trackButtonAction:(NSMutableDictionary *)blockDict {
+    void(^HYZViewController3TrackHandleBlock)(id, NSInteger tag) = ^(id <AspectInfo>aspectInfo, NSInteger tag) {
+        switch (tag) {
+                case 1: {
+                    [HYZTrackManager trackRequestWithTrackId:[NSString stringWithFormat:@"%ld", tag], nil];
+                }
+                break;
+                case 2: {
+                    [HYZTrackManager trackRequestWithTrackId:[NSString stringWithFormat:@"%ld", tag], nil];
+                }
+                break;
+                case 3: {
+                    [HYZTrackManager trackRequestWithTrackId:[NSString stringWithFormat:@"%ld", tag], nil];
+                }
+                break;
+                case 4: {
+                    [HYZTrackManager trackRequestWithTrackId:[NSString stringWithFormat:@"%ld", tag], nil];
+                }
+                break;
+            default:
+                break;
+        }
+    };
+    [blockDict setObject:[HYZViewController3TrackHandleBlock copy] forKey:@"HYZViewController3TrackHandleBlock"];
 }
 
 + (void)trackRequestWithTrackId:(NSString *)trackId, ... NS_REQUIRES_NIL_TERMINATION{
