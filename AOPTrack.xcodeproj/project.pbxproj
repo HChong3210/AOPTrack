@@ -10,7 +10,6 @@
 		0FCAB8ECCCEBFC89ACCF0088 /* libPods-AOPTrack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0CCD1DBCE75B7FBF30CB6F /* libPods-AOPTrack.a */; };
 		47D8C90A1E5FCFD50000E371 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8C9091E5FCFD50000E371 /* main.m */; };
 		47D8C90D1E5FCFD50000E371 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8C90C1E5FCFD50000E371 /* AppDelegate.m */; };
-		47D8C9101E5FCFD50000E371 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8C90F1E5FCFD50000E371 /* ViewController.m */; };
 		47D8C9131E5FCFD50000E371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D8C9111E5FCFD50000E371 /* Main.storyboard */; };
 		47D8C9151E5FCFD50000E371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D8C9141E5FCFD50000E371 /* Assets.xcassets */; };
 		47D8C9181E5FCFD50000E371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D8C9161E5FCFD50000E371 /* LaunchScreen.storyboard */; };
@@ -28,8 +27,6 @@
 		47D8C9091E5FCFD50000E371 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47D8C90B1E5FCFD50000E371 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		47D8C90C1E5FCFD50000E371 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		47D8C90E1E5FCFD50000E371 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		47D8C90F1E5FCFD50000E371 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		47D8C9121E5FCFD50000E371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47D8C9141E5FCFD50000E371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47D8C9171E5FCFD50000E371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -92,8 +89,6 @@
 			children = (
 				47D8C90B1E5FCFD50000E371 /* AppDelegate.h */,
 				47D8C90C1E5FCFD50000E371 /* AppDelegate.m */,
-				47D8C90E1E5FCFD50000E371 /* ViewController.h */,
-				47D8C90F1E5FCFD50000E371 /* ViewController.m */,
 				47D8C9211E5FD23E0000E371 /* HYZTrackList.h */,
 				47D8C9221E5FD23E0000E371 /* HYZTrackList.m */,
 				47D8C92D1E6024B70000E371 /* HYZTrackManager.h */,
@@ -256,7 +251,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				47D8C92C1E5FD4490000E371 /* HYZViewController3.m in Sources */,
-				47D8C9101E5FCFD50000E371 /* ViewController.m in Sources */,
 				47D8C9291E5FD3960000E371 /* HYZViewController2.m in Sources */,
 				47D8C9231E5FD23E0000E371 /* HYZTrackList.m in Sources */,
 				47D8C90D1E5FCFD50000E371 /* AppDelegate.m in Sources */,

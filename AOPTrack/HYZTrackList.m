@@ -15,7 +15,7 @@
   //=======================================简单埋点==========================================
                            //HYZViewController1简单埋点点击事件
                            @{kClassName:@"HYZViewController1",
-                             kHookFunction:@"buttonAction:",
+                             kHookFunction:@"simpleTrack:para2:",
                              kEventType:HYZViewController1SimpleButtonClick,
                              kIsLightEvent:@(YES)},
                            //HYZViewController1复杂埋点点击事件
@@ -30,15 +30,7 @@
                              kIsLightEvent:@(YES)},
                            
 //=======================================复杂埋点==========================================
-                           @{kClassName:@"DFCWeiXinUserHomeVC",
-                             kHookFunction:@"weixinHomeFunctionWithType:",
-                             kHandlerBlock:@"DFCWeiXinUserHomeFunctionHandler",
-                             kIsLightEvent:@(NO)},
-                           @{kClassName:@"DFCWeiXinUserHomeVC",
-                             kHookFunction:@"weixinHomeFunctionWithType:",
-                             kHandlerBlock:@"DFCWeiXinUserHomeFunctionHandler",
-                             kIsLightEvent:@(NO)},
-                           @{kClassName:@"DFCWeiXinUserHomeVC",
+                           @{kClassName:@"HYZViewController3",
                              kHookFunction:@"weixinHomeFunctionWithType:",
                              kHandlerBlock:@"DFCWeiXinUserHomeFunctionHandler",
                              kIsLightEvent:@(NO)}];

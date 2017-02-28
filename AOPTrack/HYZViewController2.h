@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^OddNumberBlock)(id obj);
+typedef void(^EvenNumberBlock)(id obj);
+
 @interface HYZViewController2 : UIViewController
 
+- (void)arcNumberWithOdd:(OddNumberBlock)oddNumber even:(EvenNumberBlock)evenNumber;
 @end

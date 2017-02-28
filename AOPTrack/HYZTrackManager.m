@@ -29,6 +29,7 @@
     }];
 }
 
+//简单埋点虽然可以拿到对应方法的参数, 但是如果需要把该参数传到埋点请求的网络事件中的话, 必须使用复杂埋点来处理
 + (void)lightTrackTarget:(Class)target selector:(SEL)selector functionName:(NSString *)functionName trackId:(NSString *)trackId {
     NSError *error;
     NSInteger functionParamCount = [[functionName componentsSeparatedByString:@":"] count] - 1;

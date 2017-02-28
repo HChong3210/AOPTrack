@@ -21,7 +21,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     UIButton *blockButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    blockButton.frame = CGRectMake(100, 300, 100, 50);
+    blockButton.frame = CGRectMake(100, 200, 100, 50);
     [blockButton addTarget:self action:@selector(blockButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [blockButton setTitle:@"block埋点" forState:UIControlStateNormal];
     blockButton.backgroundColor = [UIColor lightGrayColor];
@@ -30,7 +30,7 @@
 
     
     UIButton *complexButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    complexButton.frame = CGRectMake(100, 200, 100, 50);
+    complexButton.frame = CGRectMake(100, 300, 100, 50);
     [complexButton addTarget:self action:@selector(complexButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [complexButton setTitle:@"complex埋点" forState:UIControlStateNormal];
     complexButton.backgroundColor = [UIColor lightGrayColor];
@@ -53,6 +53,10 @@
 }
 
 - (void)buttonAction:(id)action {
+    [self simpleTrack:@"参数1" para2:@"参数2"];
+}
+
+- (void)simpleTrack:(NSString *)para1 para2:(NSString *)para2 {
     
 }
 
